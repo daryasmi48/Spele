@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spoku mednieks</title>
+<style>
+/* Pamata izkārtojums — šīs rindas nemaini */
+body { font-family: Arial, sans-serif; max-width: 680px; margin: 24px auto; padding: 16px; line-height: 1.6; }
+button, input { font: inherit; padding: 10px 16px; margin: 6px 0; cursor: pointer; }
+img, audio { max-width: 100%; }
+[hidden] { display: none !important; }
+
+/* NOFORMĒ ŠEIT: pielieto 2.1. un 2.2. nodarbībā apgūto CSS */
+body {
+  background-color: #e6cce0;
+  color: #000000;
+}
+
+h1 {
+  color: #61192b;
+  font-size: 16px; 
+  text-align: center;
+}
+
+.noteikumi {
+  background-color: #f9f1f6;
+  color: #35101c;
+  padding: 12px;
+}
+
+.laukums {
+  width: 360px;
+  padding: 12px;
+  border: 2px solid #94a3b8;
+  background-color: #f8fafc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #245b91;
+  color: #ffffff;
+  border: 0;
+}
+</style>
+</head>
+<body>
+<h1>Spoku mednieks</h1>
+<p>Noteiktā laikā noķer pēc iespējas vairāk spoku, izvairies no bīstamajiem spokiem, un mēģini iekļauties laikā.</p>
+<section class="noteikumi">
+  <h2>Noteikumi</h2>
+  <p>Lai iegūtu punktu, nospied pogu “Noķert spoku”. Katrs klikšķis pieskaita vienu punktu, un punktu skaits uzreiz tiek atjaunots spēles laukumā.</p>
+  <p>Skaņas efektu vari noklausīties, izmantojot atskaņotāja vadīklas. Nospied atskaņošanas pogu, lai atskaņotu klikšķa skaņu; skaņa nesākas automātiski, nospiežot punktu vākšanas pogu.</p>
+  <p>Nākotnē spēli varētu papildināt ar spoku ķeršanu, laika ierobežojumu un dzīvību skaitu.</p>
+</section>
+<div class="laukums">
+  <h2>Spoku mednieks</h2>
+  <img src="atteli/varonis.svg" alt="Mednieks" width="128">
+  <p>Skaņas efekta nozīme spēlē: gūtā punkta iegūšanas skaņa</p>
+  <audio controls src="skanas/klikskis.wav"></audio>
+  <p id="punkti">Punkti: 0</p>
+  <button onclick="savakt()">Noķert spoku</button>
+</div>
+<script>
+// Gatava punktu poga — šo skriptu nemaini.
+let punkti = 0;
+function savakt() {
+  punkti = punkti + 1;
+  document.getElementById("punkti").textContent = "Punkti: " + punkti;
+}
+</script>
+</body>
+</html>
