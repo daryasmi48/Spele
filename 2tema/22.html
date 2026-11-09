@@ -3,32 +3,53 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Spoku mednieks</title>
+<title>Spoku mednieks
+</title>
 <style>
+/* Pamata izkārtojums — šīs rindas nemaini */
 body { font-family: Arial, sans-serif; max-width: 680px; margin: 24px auto; padding: 16px; line-height: 1.6; }
-button, input { font: inherit; padding: 10px; margin: 4px; }
-button { cursor: pointer; }
+input { font: inherit; padding: 10px; margin: 4px; }
 img { max-width: 100%; height: auto; }
+.laukums p { margin: 0 0 8px 0; }
 [hidden] { display: none !important; }
+
+/* MAINI ŠEIT: spēles laukums un atstarpes */
+h1 {
+  color: #751b32; text-align: center;
+}
+
 .laukums {
-  width: 360px;
-  height: 240px;
-  padding: 20px;
+  width: 400px;
+  height: 295px;
+  padding:  20px;
   margin: 20px auto;
-  max-width: 100%; 
-  border: 3px solid #8f243e;
-  background-color: #fdebf3;
+  border: 3px solid #af4974;
+  border-radius: 12px;
+  outline: 3px dashed hsl(342, 73%, 25%);
+  background-color: #fcdce8;
   box-sizing: border-box;
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+  padding: 10px 18px;
+  margin: 8px 10px;
+  background-color: #af4974;
+  color: #ffffff;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
 }
 </style>
 </head>
 <body>
 <h1>Spoku mednieks</h1>
 <div class="laukums">
-  <p>Spoku ķeršana</p>
+  <p>Spēlē “Spoku mednieks” spēlētājam 60 sekunžu laikā jānoķer vismaz 5 spoki. Spēlētājam ir 3 dzīvības, tāpēc jāuzmanās no bīstamajiem spokiem un nedrīkst zaudēt visas dzīvības. Spēle sākas, nospiežot pogu “Sākt”. Par noķertajiem spokiem krājas punkti; uzvara ir tad, ja līdz laika beigām noķerti vismaz 5 spoki un saglabāta vismaz viena dzīvība.</p>
+  <p> 60 sekundēs noķert vismaz 5 spokus, izmantojot 3 dzīvības un izvairoties no bīstamajiem spokiem.</p>
 </div>
 <button>Sākt</button>
 <button>Noteikumi</button>
 </body>
 </html>
-
