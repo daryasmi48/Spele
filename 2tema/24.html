@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Spēles skaņas</title>
+<title>Spoku mednieks</title>
 <style>
 /* Pamata izkārtojums — šīs rindas nemaini */
 body { font-family: Arial, sans-serif; max-width: 680px; margin: 24px auto; padding: 16px; line-height: 1.6; }
@@ -13,8 +13,9 @@ img, audio { max-width: 100%; }
 
 /* MAINI ŠEIT: skaņas bloku izskats */
 .skana {
-  background-color: #f8fafc;
-  border: 2px solid #cbd5e1;
+  background-color: #f5e3ee;
+  border: 2px solid #7c2345;
+  border-radius: 12px;
   padding: 16px;
   margin: 16px 0;
   box-sizing: border-box;
@@ -22,13 +23,17 @@ img, audio { max-width: 100%; }
 </style>
 </head>
 <body>
-<h1>Spēles skaņas</h1>
+<h1>Spoku mednieks</h1>
 <p>Noklausies spēles skaņas efektus ar atskaņošanas pogu.</p>
 <div class="skana">
-  <h2>1. skaņa</h2>
-  <p>Šo skaņu dzirdēsi, kad savāksi zvaigzni.</p>
-  <audio controls src="klikskis.wav"></audio>
+  <h2>Punka iegūšana</h2>
+  <p>Šo skaņu dzirdēsi, kad noķersi spoku.</p>
+  <audio controls src="skanas/klikskis.wav"></audio>
 </div>
-<!-- ŠEIT OTRAIS SKAŅAS BLOKS -->
+<div class="skana">
+  <h2>Uzvara</h2>
+  <p>Šo skaņu dzirdēsi, kad gūsi uzvaru.</p>
+  <audio controls src="skanas/klikskis.wav"></audio>
+</div>
 </body>
 </html>
