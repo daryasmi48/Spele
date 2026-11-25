@@ -26,19 +26,25 @@ h1 {
 .noteikumi {
   background-color: #f9f1f6;
   color: #35101c;
+  border-radius: 12px;
   padding: 12px;
 }
 
 .laukums {
   width: 360px;
-  padding: 12px;
-  border: 2px solid #94a3b8;
-  background-color: #f8fafc;
+  padding: 20px;
+  border: 2px dashed #70132f;
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 100%;
+  text-align: center;
+  background-color: #fdf1f6;
   box-sizing: border-box;
 }
 
 button {
-  background-color: #245b91;
+  background-color: #912448;
+  border-radius: 8px;
   color: #ffffff;
   border: 0;
 }
@@ -51,12 +57,13 @@ button {
   <h2>Noteikumi</h2>
   <p>Lai iegūtu punktu, nospied pogu “Noķert spoku”. Katrs klikšķis pieskaita vienu punktu, un punktu skaits uzreiz tiek atjaunots spēles laukumā.</p>
   <p>Skaņas efektu vari noklausīties, izmantojot atskaņotāja vadīklas. Nospied atskaņošanas pogu, lai atskaņotu klikšķa skaņu; skaņa nesākas automātiski, nospiežot punktu vākšanas pogu.</p>
+  <p>Skaņa palīdz saprast, ka darbība izdevās, un padara spoku mednieka spēli jautrāku un saistošāku.</p>
   <p>Nākotnē spēli varētu papildināt ar spoku ķeršanu, laika ierobežojumu un dzīvību skaitu.</p>
 </section>
 <div class="laukums">
   <h2>Spoku mednieks</h2>
-  <img src="atteli/varonis.svg" alt="Mednieks" width="128">
-  <p>Skaņas efekta nozīme spēlē: gūtā punkta iegūšanas skaņa</p>
+  <img src="atteli/varonis.png" alt="Mednieks" width="128">
+  <p>Skaņas loma spēlē — paziņot par veiksmīgu punkta iegūšanu un nostiprināt spēlētāja veiksmes sajūtu.</p>
   <audio controls src="skanas/klikskis.wav"></audio>
   <p id="punkti">Punkti: 0</p>
   <button onclick="savakt()">Noķert spoku</button>
